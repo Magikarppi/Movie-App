@@ -10,7 +10,7 @@ input.addEventListener('keyup', function (e) {
 
     if (keyName === 'Enter') {
         const searchParam = input.value;
-        location.href = "G:/KOODAuS/Projektit/Leffasivu/MovieWebsite.html" + "?search=" + searchParam;
+        location.href = "MovieWebsite.html" + "?search=" + searchParam;
     }
 })
 
@@ -51,7 +51,7 @@ async function trendingMovie(){
     } else {
     h3.innerHTML = json.results[i].release_date;
     }
-    trendingLink.setAttribute('href', 'G:KOODAuS/projektit/Leffasivu/movieInfo.html?movieId=' + 
+    trendingLink.setAttribute('href', 'movieInfo.html?movieId=' + 
     json.results[i].id + '&query=' + json.results[i].title);
     trendingLink.classList.add('trendingLink');
     moviePic.appendChild(imageElement);
