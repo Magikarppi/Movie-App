@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: darkgray;
+    text-decoration: none;
+}
+.main_bg{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    height: 100vh;
+    color: white;
+}
+
+.rating_text {
+    color: #100116;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.movieInfo {
+    grid-area: content;
+}
+.movieRating {
+    grid-area: rating;
+}
+.trendingLink {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 50px 100px;
+    grid-template-areas: 
+    "content image "
+    "rating image ";
+    grid-gap: 30px;
+    margin-top: 10px;
+    color: white;
+}
+.moviePic {
+    max-width: 100%;
+    height: auto;
+}
+
+#trendingInfo {
+    position: absolute;
+    bottom: 130px;
+    right: 130px; 
+}
+
+#trendingInfo h3 {
+    color: #d3d3d3;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.movieInfo h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fdedff;
+}
+.movieInfo h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #d3d3d3;
+}
+
+.input {
+    background-color: #100116;
+    border-color: black;
+    color: #e5e5e5;
+    box-shadow: inset 0 1px 2px black;
+    max-width: 100%;
+    width: 100%;
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    justify-content: flex-start;
+    line-height: 1.5;
+    position: relative;
+    vertical-align: top;
+    -webkit-box-shadow: 0px 2px 30px -4px black;
+    -moz-box-shadow: 0px 2px 30px -4px black;
+    box-shadow: 2px 2px 30px -4px white;
+    box-sizing: border-box;
+    padding: 1.2em 1.2em;
+}
+form {
+    position: absolute;
+    top: 55px;
+    left: 40px;
+    margin: 0 30px;
+    width: 400px;
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px;
+    color: #ad09c1;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2em;
+    align-self: start;
+    display: inline-block;
+    text-shadow: black 1px;
+}
+
+.rating_text {
+    color: #d3d3d3;
+    font-size: 10px;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
