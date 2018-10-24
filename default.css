@@ -117,3 +117,33 @@ p {
     position: relative;
     top: 50px;
 }
+
+@media (max-width: 767px) {
+    .moviePic {
+        display:none;
+    }
+    #trendingInfo {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+    .trending h3 {
+        padding-bottom: 0;
+    }
+    .trendingLink {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "content" "rating" "image";
+        grid-gap: 10px;
+        margin-top: 0;
+    }
+    .movieInfo h2 {
+        font-size: 2rem;
+    }
+    .movieInfo h3 {
+        margin: 0.5em 0 0 0;
+    }
+    .rating_text {
+        margin: 0.5em 0;
+    }
+}
