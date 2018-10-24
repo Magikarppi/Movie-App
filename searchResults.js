@@ -79,7 +79,7 @@ function renderMovies(){
         h3.innerHTML = element.release_date;
         overview.innerHTML = element.overview;
         const img_baseURL = "https://image.tmdb.org/t/p/w500";
-        a.href = `G:KOODAuS/projektit/Leffasivu/movieInfo.html?movieId=${element.id}&query=${searchTerm}`;
+        a.href = `movieInfo.html?movieId=${element.id}&query=${searchTerm}`;
         img.src = `${img_baseURL}${element.poster_path}`;
         if (element.poster_path === null){
             img.src = "noImage.png"

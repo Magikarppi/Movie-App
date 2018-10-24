@@ -171,3 +171,19 @@ a:hover .toolTipText {
     font-size: 0.7em;
     text-align: center;
 }
+
+@media (max-width: 767px) {
+    .movie_bg {
+        background: none !important;
+        height: 100%;
+    }
+    .movie_pic {
+        max-width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .movie_info {
+        margin-top: 20px;
+    }
+}

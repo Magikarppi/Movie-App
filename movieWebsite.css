@@ -125,3 +125,42 @@ form {
     position: relative;
     top: 50px;
 }
+
+@media (max-width: 767px) {
+    .info {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "content" "image";
+    position: relative;
+    grid-gap: 20px;
+    color: black;
+    padding: 20px;
+    text-align: left;
+    }
+    .movie_details h2 {
+        font-size: 2rem;
+    }
+    .movie_details {
+        margin-left: 0;
+    }
+    .movie_details p {
+        display: none;
+    }
+    .movie_details h3 {
+        margin: 0.5em 0 0.5em 0;
+    }
+    .results_num {
+        margin-bottom: 0;
+    }
+    .movies_container {
+        grid-template-areas: 
+        "picture"
+        "details"
+        "actors";
+        grid-gap: 10px;
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+}
