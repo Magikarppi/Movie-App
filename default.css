@@ -119,13 +119,22 @@ p {
 }
 
 @media (max-width: 767px) {
+    form {
+        position: absolute;
+        top: 55px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+    }
     .moviePic {
         display:none;
     }
     #trendingInfo {
         position: absolute;
-        bottom: 30px;
+        bottom: 90px;
         left: 30px;
+        height: 250px;
+        width: auto;
     }
     .trending h3 {
         padding-bottom: 0;
@@ -133,9 +142,10 @@ p {
     .trendingLink {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "content" "rating" "image";
+        grid-template-areas: "content" "rating";
         grid-gap: 10px;
         margin-top: 0;
+        height: 250px;
     }
     .movieInfo h2 {
         font-size: 2rem;
@@ -145,5 +155,15 @@ p {
     }
     .rating_text {
         margin: 0.5em 0;
+    }
+    p {
+        display: block;
+    }
+    .movieInfo {
+        display: block;
+    }
+    .movieRating {
+        position: absolute;
+        bottom: 0px;
     }
 }

@@ -3,16 +3,23 @@
     padding: 0;
 }
 
+html {
+    background: rgba(94, 1, 117, 0.9);
+    color: #b7b3b9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 p {
     margin-bottom: 0.8em;
     line-height: 1.8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #b7b3b9;
 }
 
 h2 {
     font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
-    color: #fdedff
+    color: rgb(14, 2, 12)
 }
 
 h3 {
@@ -88,13 +95,6 @@ h3 {
     grid-template-rows: auto 1fr;
 }
 
-p {
-    margin-bottom: 0.8em;
-    line-height: 1.8em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #b7b3b9;
-}
-
 .a_back {
     text-decoration: none;
     color: #b7b3b9;
@@ -125,8 +125,8 @@ a {
 }
 a .toolTipText {
     visibility: hidden;
-  width: 120px;
-  background: rgba(0,0,0,0.3);
+  width: 150px;
+  background: rgba(17, 1, 13, 0.7);
   color: #b7b3b9;
   text-align: center;
   border-radius: 2px;
@@ -134,8 +134,8 @@ a .toolTipText {
   box-sizing: border-box;
   position: absolute;
   z-index: 1;
-  top: 85%;
-  left: 23%;
+  top: 82%;
+  right: 25%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 1s;
@@ -170,6 +170,13 @@ a:hover .toolTipText {
     text-transform: uppercase;
     font-size: 0.7em;
     text-align: center;
+    position: relative;
+    left: -10px;
+}
+
+.movie_img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 767px) {
@@ -185,5 +192,17 @@ a:hover .toolTipText {
     }
     .movie_info {
         margin-top: 20px;
+    }
+    .movie_container {
+        grid-template-areas: 
+        "main_pic"
+        "info"
+        "recommend";
+        grid-gap: 10px;
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+    .p_rec {
+        left: -40px;
     }
 }
