@@ -39,7 +39,7 @@ function getMovie(){
 
 async function getMovieApi(searchTerm, pageNumber){
     loader.classList.add('active');
-    const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=521a54d05a71e09e0c762514575059a7&language=en-US&page=${pageNumber}&include_adult=true&query=${searchTerm}`);
+    const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=521a54d05a71e09e0c762514575059a7&language=en-US&page=${pageNumber}&query=${searchTerm}`);
     const json = await response.json();
     return json;
 }
